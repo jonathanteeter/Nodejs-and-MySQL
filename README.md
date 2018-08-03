@@ -1,19 +1,29 @@
 # Nodejs-and-MySQL app
-## Introduction
-This is a node js application that uses the MySQL and Inquirer npm packages.
+This is a Node.js command-line application that creates an Amazon-like storefront.  The application will take an order from the customer and deplete stock from the store's inventory.  MySQL is used to account for product and inventory.
 
-## What the project does
-This application creates an Amazon-like storefront using MySQL. The app will take in an order from customers and deplete stock from the store's inventory. 
-
-## Limitations
-None
-
-## Why the project is useful
-This was an exercise in using these web technologies:  nodeJS, JavaScript, NPM MySQL & Inquirer libraries
+## Design & Technology
+* Populate a MySQL database with 12 products with inventory to include these columns:
+    * item_id
+    * product_name
+    * department_name
+    * price
+    * stock_quantity
+* Workflow:
+    * The application prompts the shopper with 2 questions at purchase:
+        * What is the item_id
+        * and Quantity
+    * Next, the order is submitted.
+    * If enough product exists to match the order, a receipt is provided.
+    * If product is lacking, the shopper is notified.  No sale is made.
+    * Each successful sale will deplete the product's inventory from the MySQL database.
+* Key technologies used to build this application are:
+    * Node.js
+    * JavaScript 
+    * NPM (MySQL and Inquirer)
 
 ## Challenges
-- Node.js is a back-end technology that required practice (like with anything) to get it.
-- Additional use of NPM packages was useful but required some trial and error.
+* Node.js is a back-end technology that required practice (like with anything) to get it.
+* Using NPM packages required some trial and error.
 
 ## Link to [My Portfolio] 
-(https://teeterjm58.github.io/jtPortfolio/)
+(https://jonathanteeter.github.io/jtPortfolio/)
