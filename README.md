@@ -9,8 +9,9 @@ This is a Node.js command-line application that creates an Amazon-like storefron
     * price
     * stock_quantity
 * Workflow:
+    * The products are displayed on the screen as freshly pulled from the MySQL database.
     * The application prompts the shopper with 2 questions at purchase:
-        * What is the item_id
+        * The item_id
         * and Quantity
     * Next, the order is submitted.
     * If enough product exists to match the order, a receipt is provided.
